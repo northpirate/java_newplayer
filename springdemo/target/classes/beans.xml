@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--使用Spring创建对象
+    hellow hellow = new hellow();
+    property设置属性  控制反转!
+    -->
+
+    <bean id="hello"
+          class="com.gjy.springdemo.hellow"
+          init-method="init" destroy-method="destroy">
+        <property name="name" value="spring1"></property>
+    </bean>
+
+    <bean id="beanhello" class="com.gjy.springdemo.helloworld">
+        <property name="message" value="Spring_using_beanfactory"></property>
+    </bean>
+
+    <bean class="com.gjy.springdemo.inithellow"></bean>
+</beans>
