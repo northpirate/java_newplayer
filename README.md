@@ -1,7 +1,7 @@
 # java_newplayer
 this is a practise
 
-1.0519-springMVC
+# 1.0519-springMVC
 
 直接用maven开一个project，配jar依赖的时候javax.servlet.jsp和javax.servlet导不进去，显示not found,搞了一天差点把maven重新配了也不行，重新用spring intializer开一个project就搞出来了（reload）之后，虽然在reload之前也是爆红，同时发现maven那一栏在springmvc子module下可以看到dependencies了，之前就一直没看到。
 好在不爆红了
